@@ -1,0 +1,77 @@
+<main>
+    <div class="container-fluid">
+        <div class="row min-vh-100">
+            <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
+                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                    <a href="/"
+                        class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                        <span class="fs-5 d-none d-sm-inline font-weight-bold text-primary">MF ESTOQUE</span>
+                    </a>
+                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+                        id="menu">
+                        <li>
+                            <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                <i class="bi bi-bag-fill"></i>
+                                <span class="ms-2 d-none d-sm-inline text-white">Produtos</span>
+                            </a>
+                            <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
+                                <li class="w-100">
+                                    <a href="/panel" class="nav-link px-0">
+                                        <span class="d-none d-sm-inline text-white">Visualizar</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/addProduct" class="nav-link px-0">
+                                        <span class="d-none d-sm-inline text-white">Adicionar</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                <i class="bi bi-person-badge-fill"></i>
+                                <span class="ms-2 d-none d-sm-inline text-white">Administradores</span>
+                            </a>
+                            <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
+                                <li class="w-100">
+                                    <a href="/admin" class="nav-link px-0">
+                                        <span class="d-none d-sm-inline text-white">Visualizar</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/addAdmin" class="nav-link px-0">
+                                        <span class="d-none d-sm-inline text-white">Cadastrar</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <hr>
+                    <div class="dropdown pb-4">
+                        <button type="button" class="btn btn-outline-danger">SAIR</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center align-items-center">
+                <form action="/addProduct" method="post" enctype="multipart/form-data"
+                    class="bg-light p-4 rounded shadow w-25">
+                    <h2 class="text-center mb-4">Cadastrar Administrador</h2>
+                    <div class="form-group mb-3">
+                        <label for="name">Nome completo *</label>
+                        <input type="text" class="form-control" name="name" id="name" placeholder="Nome" required>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="email">Email *</label>
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="password">Senha *</label>
+                        <input type="password" class="form-control" name="password" id="password" placeholder="********"
+                            required>
+                    </div>
+                    <button type="submit" class="btn btn-success w-100">Cadastrar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>

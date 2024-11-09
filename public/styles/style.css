@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #202020;
+}
+main {
+    background-color: #131313;
+    width: 100%;
+   
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+
+.title {
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.form-login {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+    gap: 10px;
+    margin: auto;
+    
+}
+
+.form-login input {
+    border-radius: 6px;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+.form-login input[type="submit"] {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.form-login input[type="submit"]:hover {
+    background-color: #202020;
+}
+
+.form-login a {
+    text-decoration: none;
+    text-align: center;
+    color: #cfcfcf;
+    font-size: 14px;
+
+}
+
+.container-table {
+    width: 100%;
+    max-width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+
+
+

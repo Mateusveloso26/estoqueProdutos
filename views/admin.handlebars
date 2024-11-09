@@ -1,0 +1,92 @@
+<main>
+
+
+    <div class="container-fluid">
+        <div class="row flex-nowrap">
+            <div class="col-auto col-md-3 col-xl-2 px-sm-2  px-0 bg-dark">
+                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                    <a href="/"
+                        class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                        <span class="fs-5 d-none d-sm-inline ont-weight-bold text-primary">MF ESTOQUE</span>
+                    </a>
+                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+                        id="menu">
+                        <li>
+                            <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                <i class="bi bi-bag-fill"></i> <span
+                                    class="ms-2 d-none d-sm-inline text-white">Produtos</span> </a>
+                            <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
+                                <li class="w-100">
+                                    <a href="/panel" class="nav-link px-0"> <span
+                                            class="d-none d-sm-inline text-white">Visualizar</span> </a>
+                                </li>
+                                <li>
+                                    <a href="/addProduct" class="nav-link px-0"> <span
+                                            class="d-none d-sm-inline text-white">Adicionar</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                <i class="bi bi-person-badge-fill"></i> <span
+                                    class="ms-2 d-none d-sm-inline text-white">Administradores</span> </a>
+                            <ul class="collapse nav flex-column ms-1 " id="submenu3" data-bs-parent="#menu">
+                                <li class="w-100">
+                                    <a href="/admin" class="nav-link px-0"> <span
+                                            class="d-none d-sm-inline text-white">Visualizar</span></a>
+                                </li>
+                                <li>
+                                    <a href="/addAdmin" class="nav-link px-0"> <span
+                                            class="d-none d-sm-inline text-white">Cadastrar</span></a>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                    <hr>
+                    <div class="dropdown pb-4">
+                        <button type="button" class="btn btn-outline-danger">SAIR</button>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="col py-3">
+                <h1 class="title">Usuarios cadastrados</h1>
+
+                <div class="container-table">
+                    <table class="table mt-4">
+                        <thead class="table-dark">
+                            <tr>
+                                <th scope="col" class="text-center">Nome</th>
+                                <th scope="col" class="text-center">Email</th>
+                                <th scope="col" class="text-center">Senha</th>
+                                <th scope="col" class="text-center">Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {{!-- {{#each products}} --}}
+                            <tr>
+                                <td class="text-center align-middle text-capitalize">teste</td>
+                                <td class="text-center align-middle">teste@teste.comx</td>
+                                <td class="text-center align-middle">teste</td>
+                                <td class="text-center align-middle">
+                                    <a href="/edit/{{this.id}}"
+                                        class="bg-primary text-white text-decoration-none p-2 rounded align-middle">Editar</a>
+                                    <a href="/delete/{{this.id}}"
+                                        class="bg-danger text-white text-decoration-none p-2 rounded align-middle">Excluir</a>
+
+                                </td>
+                            </tr>
+                            {{!-- {{/each}} --}}
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</main>
